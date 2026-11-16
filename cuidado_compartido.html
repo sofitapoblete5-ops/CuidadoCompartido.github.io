@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado Compartido — Protección Solar y Salud Cutánea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burdeo: {
+                            DEFAULT: '#6B1D2F',
+                            dark: '#4A1220',
+                            light: '#8E2840',
+                            soft: '#FAF5F6',
+                            rose: '#F2E4E7'
+                        },
+                        charcoal: '#141414',
+                        ink: '#262626',
+                        cream: '#FDFBFB'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBFB;
+            color: #141414;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-editorial {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+        .card-hover {
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px -10px rgba(107, 29, 47, 0.12);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-burdeo selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-burdeo/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded-full bg-burdeo flex items-center justify-center text-white font-editorial text-xl font-semibold tracking-wider shadow-sm">
+                    CC
+                </div>
+                <div>
+                    <span class="font-editorial text-2xl font-semibold tracking-tight text-charcoal block leading-none">Cuidado Compartido</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-burdeo font-medium">Salud &amp; Protección Cutánea</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink/80">
+                <a href="#propuesta" class="hover:text-burdeo transition-colors">¿Qué proponemos?</a>
+                <a href="#tipos-piel" class="hover:text-burdeo transition-colors">Tipos de piel</a>
+                <a href="#proteccion" class="hover:text-burdeo transition-colors">Protección solar</a>
+                <a href="#test" class="px-5 py-2.5 rounded-full bg-burdeo text-white hover:bg-burdeo-dark transition-all shadow-sm">Hacer Test</a>
+                <a href="#contacto" class="hover:text-burdeo transition-colors">Contáctanos</a>
+            </nav>
+            <a href="#test" class="md:hidden px-4 py-2 rounded-full bg-burdeo text-white text-xs font-medium">Test</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative overflow-hidden bg-charcoal text-white">
+        <div class="absolute inset-0 opacity-35">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1800&q=80" alt="Cuidado de la piel bajo la luz natural" class="w-full h-full object-cover object-center">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-burdeo-dark/60"></div>
+
+        <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-burdeo-light"></span>
+                    <span class="text-xs uppercase tracking-[0.2em] text-white/90">Prevención &amp; Bienestar Diario</span>
+                </div>
+                <h1 class="font-editorial text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.1] tracking-tight">
+                    Cuidado Compartido: <span class="italic font-normal text-burdeo-rose">tu piel tiene memoria</span>
+                </h1>
+                <p class="text-base sm:text-lg text-white/80 font-light leading-relaxed max-w-xl">
+                    Información y orientación para el cuidado de la piel frente al calor y la exposición solar en tu rutina diaria y entorno laboral.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#test" class="px-7 py-3.5 rounded-full bg-burdeo hover:bg-burdeo-light text-white text-sm font-medium tracking-wide transition-all shadow-lg shadow-burdeo/30">
+                        Descubrir mi rutina en el Test
+                    </a>
+                    <a href="#proteccion" class="px-7 py-3.5 rounded-full bg-transparent border border-white/30 hover:bg-white/10 text-white text-sm font-medium tracking-wide transition-all">
+                        Explorar guía solar
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 hidden md:block">
+                <div class="relative rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=80" alt="Aplicación de protector solar" class="w-full h-[440px] object-cover">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/95 via-charcoal/70 to-transparent p-6">
+                        <p class="font-editorial italic text-xl text-burdeo-rose">“No se trata de vanidad, sino de proteger nuestra salud frente a daños que muchas veces no vemos al instante.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Qué proponemos? -->
+    <section id="propuesta" class="py-20 md:py-24 bg-white border-b border-burdeo/10">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-5">
+                    <div class="relative">
+                        <div class="absolute -inset-3 rounded-2xl border border-burdeo/20 translate-x-2 translate-y-2"></div>
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=900&q=80" alt="Productos de cuidado dermatológico" class="relative rounded-2xl w-full h-80 object-cover shadow-md">
+                    </div>
+                </div>
+                <div class="md:col-span-7 space-y-5">
+                    <span class="text-xs uppercase tracking-[0.22em] text-burdeo font-semibold">Nuestra Misión</span>
+                    <h2 class="font-editorial text-3xl sm:text-4xl font-semibold text-charcoal">¿Qué proponemos?</h2>
+                    <div class="w-14 h-0.5 bg-burdeo"></div>
+                    <p class="text-ink/85 text-base sm:text-lg leading-relaxed font-light">
+                        En <strong class="font-semibold text-burdeo">Cuidado Compartido</strong> buscamos informar y ayudar a las personas que se exponen a calor extremo o luz solar prolongada para mantener la salud de su piel mediante información y facilitación de productos adecuados para esta tarea tan importante.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-3">
+                        <div class="p-4 rounded-xl bg-burdeo-soft border border-burdeo/10">
+                            <span class="font-editorial text-2xl font-semibold text-burdeo block">Educación</span>
+                            <span class="text-xs text-ink/75">Orientación clara para cada entorno de trabajo y clima.</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-burdeo-soft border border-burdeo/10">
+                            <span class="font-editorial text-2xl font-semibold text-burdeo block">Prevención</span>
+                            <span class="text-xs text-ink/75">Facilitación de fórmulas y hábitos de fotoprotección real.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Piel -->
+    <section id="tipos-piel" class="py-20 md:py-28 bg-burdeo-soft">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase tracking-[0.22em] text-burdeo font-semibold">Conoce tu barrera cutánea</span>
+                <h2 class="font-editorial text-3xl sm:text-5xl font-semibold text-charcoal">Tipos de piel</h2>
+                <p class="text-ink/75 text-sm sm:text-base font-light">
+                    Identificar las necesidades naturales de tu rostro y cuerpo es el primer paso para elegir el protector solar y la hidratación ideal frente al calor.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Piel Normal -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-burdeo/10 shadow-sm card-hover flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80" alt="Rostro con piel normal equilibrada" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-charcoal/85 text-white text-[11px] uppercase tracking-wider">Equilibrada</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-editorial text-2xl font-semibold text-charcoal mb-2">Piel Normal</h3>
+                            <p class="text-sm text-ink/80 leading-relaxed font-light">
+                                Presenta una textura suave, poros poco visibles y un balance saludable entre agua y lípidos. No tiende a brillar en exceso ni a tirantez.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-burdeo/10 text-xs text-burdeo font-medium">
+                            Recomendación: Protector solar fluido ligero FPS 30-50 de uso diario.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Piel Seca -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-burdeo/10 shadow-sm card-hover flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="Rostro femenino con piel seca que requiere hidratación" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-burdeo text-white text-[11px] uppercase tracking-wider">Requiere lípidos</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-editorial text-2xl font-semibold text-charcoal mb-2">Piel Seca</h3>
+                            <p class="text-sm text-ink/80 leading-relaxed font-light">
+                                Produce menos sebo natural, por lo que puede sentirse tirante, áspera o con descamación, especialmente frente al calor seco de cocinas u oficinas.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-burdeo/10 text-xs text-burdeo font-medium">
+                            Recomendación: Fotoprotector en crema hidratante con ceramidas o ácido hialurónico.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Piel Grasa -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-burdeo/10 shadow-sm card-hover flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Rostro real con piel grasa y luminosidad" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-charcoal/85 text-white text-[11px] uppercase tracking-wider">Brillo &amp; Poros</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-editorial text-2xl font-semibold text-charcoal mb-2">Piel Grasa</h3>
+                            <p class="text-sm text-ink/80 leading-relaxed font-light">
+                                Se caracteriza por una mayor producción sebácea, poros dilatados y brillo visible en todo el rostro, acentuado por la humedad y las altas temperaturas.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-burdeo/10 text-xs text-burdeo font-medium">
+                            Recomendación: Gel-crema oil-free, toque seco y no comedogénico resistente al sudor.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Piel Mixta -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-burdeo/10 shadow-sm card-hover flex flex-col">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Rostro natural con piel mixta en zona T" class="w-full h-full object-cover object-center">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-burdeo text-white text-[11px] uppercase tracking-wider">Zona T activa</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-editorial text-2xl font-semibold text-charcoal mb-2">Piel Mixta</h3>
+                            <p class="text-sm text-ink/80 leading-relaxed font-light">
+                                Combina brillo y poros más visibles en la zona T (frente, nariz y mentón) con mejillas normales o ligeramente deshidratadas.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-burdeo/10 text-xs text-burdeo font-medium">
+                            Recomendación: Emulsión ligera equilibrante de rápida absorción sin residuo graso.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Piel Sensible -->
+                <article class="bg-white rounded-2xl overflow-hidden border border-burdeo/10 shadow-sm card-hover flex flex-col sm:col-span-2 lg:col-span-2">
+                    <div class="grid md:grid-cols-12 h-full">
+                        <div class="md:col-span-5 h-60 md:h-auto overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Rostro real con piel sensible propensa al enrojecimiento" class="w-full h-full object-cover object-center">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-charcoal/85 text-white text-[11px] uppercase tracking-wider">Reactiva al calor</span>
+                        </div>
+                        <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-charcoal mb-3">Piel Sensible o Reactiva</h3>
+                                <p class="text-sm sm:text-base text-ink/80 leading-relaxed font-light">
+                                    Reacciona con facilidad ante la radiación UV, los cambios bruscos de temperatura, el viento o el calor directo de hornos y fogones, manifestando enrojecimiento, ardor o picazón.
+                                </p>
+                            </div>
+                            <div class="pt-4 border-t border-burdeo/10 text-xs sm:text-sm text-burdeo font-medium">
+                                Recomendación: Filtros minerales o hipoalergénicos sin perfume con activos calmantes (niacinamida, pantenol o agua termal).
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información sobre protección solar -->
+    <section id="proteccion" class="py-20 md:py-28 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Intro Tu piel tiene memoria -->
+            <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.22em] text-burdeo font-semibold">Información sobre protección solar</span>
+                <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-charcoal">Tu piel tiene memoria</h2>
+                <p class="text-ink/80 text-base sm:text-lg leading-relaxed font-light">
+                    Solemos pensar que el protector solar es solo para el verano o para ir a la playa, pero la verdad es que la radiación y el calor nos acompañan todo el año. No se trata de vanidad, sino de proteger nuestra salud frente a daños que muchas veces no vemos al instante.
+                </p>
+            </div>
+
+            <!-- 4 Escenarios de Exposición -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Escenario 1: Rutina diaria -->
+                <div class="rounded-2xl overflow-hidden border border-charcoal/10 bg-cream card-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Mujer caminando en la ciudad protegida del sol diario" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-4 left-5 text-white font-editorial text-2xl font-semibold">En tu rutina diaria</span>
+                    </div>
+                    <div class="p-6 sm:p-7">
+                        <p class="text-sm sm:text-base text-ink/85 leading-relaxed font-light">
+                            Aunque el día esté nublado o pases mucho tiempo en interiores, los rayos UV atraviesan ventanas y nubes. Caminar por la ciudad o sentarse cerca de un ventanal acumula un desgaste silencioso en tu piel que acelera el envejecimiento, provoca manchas y aumenta el riesgo de cáncer cutáneo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Escenario 2: Al volante en el transporte público -->
+                <div class="rounded-2xl overflow-hidden border border-charcoal/10 bg-cream card-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80" alt="Conducción en transporte con exposición solar a través del parabrisas" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-4 left-5 text-white font-editorial text-2xl font-semibold">Al volante en el transporte público</span>
+                    </div>
+                    <div class="p-6 sm:p-7">
+                        <p class="text-sm sm:text-base text-ink/85 leading-relaxed font-light">
+                            Manejar un bus o trabajar en ruta implica pasar horas detrás del parabrisas y las ventanillas. Aunque el vidrio bloquea parte de los rayos solares, deja pasar la radiación UV, que penetra profundamente en la piel. Por eso, los conductores suelen acumular mucho más daño solar en el rostro, el cuello y el brazo izquierdo sin darse cuenta.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Escenario 3: Bajo el sol en la agricultura -->
+                <div class="rounded-2xl overflow-hidden border border-charcoal/10 bg-cream card-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=900&q=80" alt="Trabajo agrícola bajo radiación solar directa" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-4 left-5 text-white font-editorial text-2xl font-semibold">Bajo el sol en la agricultura</span>
+                    </div>
+                    <div class="p-6 sm:p-7">
+                        <p class="text-sm sm:text-base text-ink/85 leading-relaxed font-light">
+                            Trabajar en el campo significa enfrentar jornadas largas de radiación directa y altas temperaturas. Aquí, la piel no solo sufre quemaduras superficiales: la exposición extrema y constante agota sus defensas naturales, deshidrata los tejidos y eleva muchísimo el riesgo de lesiones graves a largo plazo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Escenario 4: Frente al calor de la cocina -->
+                <div class="rounded-2xl overflow-hidden border border-charcoal/10 bg-cream card-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80" alt="Trabajo en cocina profesional frente a calor intenso y fogones" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-4 left-5 text-white font-editorial text-2xl font-semibold">Frente al calor de la cocina</span>
+                    </div>
+                    <div class="p-6 sm:p-7">
+                        <p class="text-sm sm:text-base text-ink/85 leading-relaxed font-light">
+                            Pocas veces lo pensamos, pero los hornos, planchas y fogones industriales emiten calor intenso y radiación infrarroja. Quienes trabajan en gastronomía sufren una deshidratación profunda y un debilitamiento constante de su barrera cutánea, tan exigente para la piel como estar bajo el sol del mediodía.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ¿Cómo protegerte sin complicarte? -->
+            <div class="rounded-3xl bg-charcoal text-white p-8 sm:p-12 md:p-14 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-72 h-72 bg-burdeo/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+                <div class="relative grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8 space-y-4">
+                        <span class="text-xs uppercase tracking-[0.22em] text-burdeo-rose font-medium">Hábitos esenciales</span>
+                        <h3 class="font-editorial text-3xl sm:text-4xl font-semibold">¿Cómo protegerte sin complicarte?</h3>
+                        <p class="text-white/85 text-sm sm:text-base leading-relaxed font-light">
+                            Hacer del protector solar un hábito es mucho más fácil de lo que parece. Úsalo todos los días como el último paso antes de salir de casa (con FPS 30 – 50), sin importar el clima. Si trabajas al aire libre, frente al calor intenso de una cocina o manejando en ruta, reaplícalo cada 2 horas (o antes si sudas mucho) y complementa con ropa adecuada, gorros, lentes con filtro UV e hidratación constante. Tu piel del futuro te lo va a agradecer.
+                        </p>
+                    </div>
+                    <div class="md:col-span-4 flex flex-col gap-3">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-4">
+                            <span class="font-editorial text-3xl text-burdeo-rose font-semibold">FPS 30-50</span>
+                            <span class="text-xs text-white/80">Uso diario obligatorio incluso en días nublados</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-4">
+                            <span class="font-editorial text-3xl text-burdeo-rose font-semibold">Cada 2h</span>
+                            <span class="text-xs text-white/80">Reaplicación en ruta, campo o calor de cocina</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Test Interactivo -->
+    <section id="test" class="py-20 md:py-28 bg-burdeo-soft border-t border-burdeo/10">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12 space-y-3">
+                <span class="text-xs uppercase tracking-[0.22em] text-burdeo font-semibold">Autoevaluación Rápida</span>
+                <h2 class="font-editorial text-3xl sm:text-5xl font-semibold text-charcoal">Test de Cuidado Cutáneo</h2>
+                <p class="text-ink/75 text-sm sm:text-base font-light">
+                    Responde estas 5 preguntas breves sobre tu piel, tu entorno laboral y tus hábitos para recibir tu recomendación personalizada.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl shadow-burdeo/5 border border-burdeo/15 p-6 sm:p-10">
+                <form id="skinQuizForm" class="space-y-8">
+                    <!-- Pregunta 1 -->
+                    <div class="space-y-3">
+                        <label class="block font-editorial text-xl sm:text-2xl font-semibold text-charcoal">
+                            1. ¿Cómo sientes tu piel habitualmente a mitad del día?
+                        </label>
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="seca" class="peer sr-only" required>
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Tirante, opaca o con necesidad de crema hidratante
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="grasa" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Con brillo generalizado y poros visibles
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="mixta" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Brillante en frente y nariz, pero normal o seca en mejillas
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="sensible" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Se enrojece o siente ardor fácilmente con el calor o el sol
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="space-y-3">
+                        <label class="block font-editorial text-xl sm:text-2xl font-semibold text-charcoal">
+                            2. ¿Cuál describe mejor tu entorno diario o jornada laboral?
+                        </label>
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="rutina" class="peer sr-only" required>
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Interiores, oficina o traslados urbanos cotidianos
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="volante" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Al volante en transporte público o conducción en ruta
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="agricultura" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Bajo el sol directo al aire libre o en agricultura
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q2" value="cocina" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Frente al calor intenso de hornos, planchas o cocina
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="space-y-3">
+                        <label class="block font-editorial text-xl sm:text-2xl font-semibold text-charcoal">
+                            3. ¿Con qué frecuencia aplicas protector solar (FPS 30 - 50)?
+                        </label>
+                        <div class="space-y-2.5">
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q3" value="2" class="peer sr-only" required>
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Todos los días, sin importar si está nublado o en interiores
+                                </div>
+                            </label>
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q3" value="1" class="peer sr-only">
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Solo cuando hace mucho calor o voy a estar bajo el sol
+                                </div>
+                            </label>
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q3" value="0" class="peer sr-only">
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Casi nunca o solo en vacaciones
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="space-y-3">
+                        <label class="block font-editorial text-xl sm:text-2xl font-semibold text-charcoal">
+                            4. Si trabajas expuesto al sol, tras un parabrisas o junto a fuentes de calor, ¿reaplicas tu protección?
+                        </label>
+                        <div class="space-y-2.5">
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q4" value="2" class="peer sr-only" required>
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Sí, cada 2 horas o antes si transpiro
+                                </div>
+                            </label>
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q4" value="1" class="peer sr-only">
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    A veces, si me acuerdo durante la jornada
+                                </div>
+                            </label>
+                            <label class="cursor-pointer block">
+                                <input type="radio" name="q4" value="0" class="peer sr-only">
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    No, solo me aplico una vez en la mañana (o ninguna)
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="space-y-3">
+                        <label class="block font-editorial text-xl sm:text-2xl font-semibold text-charcoal">
+                            5. ¿Sabías que los vidrios de vehículos y el calor infrarrojo de las cocinas también deterioran la piel?
+                        </label>
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q5" value="2" class="peer sr-only" required>
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    Sí, y tomo medidas adicionales (gorros, hidratación, lentes UV)
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q5" value="0" class="peer sr-only">
+                                <div class="p-3.5 rounded-xl border border-charcoal/15 peer-checked:border-burdeo peer-checked:bg-burdeo-soft transition-all text-sm">
+                                    No lo sabía, pensaba que solo el sol directo dañaba la piel
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full py-4 rounded-full bg-burdeo hover:bg-burdeo-dark text-white font-medium tracking-wide transition-all shadow-lg shadow-burdeo/20">
+                            Ver diagnóstico y recomendaciones
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Resultado del Test -->
+                <div id="quizResult" class="hidden mt-8 pt-8 border-t border-burdeo/15 space-y-5">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <span class="px-3.5 py-1 rounded-full bg-burdeo text-white text-xs uppercase tracking-wider font-medium" id="resultBadge">Diagnóstico</span>
+                        <button type="button" onclick="resetQuiz()" class="text-xs text-burdeo underline hover:text-charcoal">Volver a realizar el test</button>
+                    </div>
+                    <h3 id="resultTitle" class="font-editorial text-2xl sm:text-3xl font-semibold text-charcoal"></h3>
+                    <p id="resultDescription" class="text-sm sm:text-base text-ink/85 leading-relaxed font-light"></p>
+                    <div class="p-5 rounded-2xl bg-burdeo-soft border border-burdeo/15 space-y-2">
+                        <span class="text-xs uppercase tracking-widest text-burdeo font-semibold block">Tu fórmula y hábito recomendado:</span>
+                        <p id="resultRecommendation" class="text-sm text-charcoal font-medium leading-relaxed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contáctanos -->
+    <footer id="contacto" class="bg-charcoal text-white pt-20 pb-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+                <div class="md:col-span-6 space-y-5">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-burdeo flex items-center justify-center text-white font-editorial text-xl font-semibold">
+                            CC
+                        </div>
+                        <span class="font-editorial text-2xl font-semibold tracking-tight">Cuidado Compartido</span>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed max-w-md font-light">
+                        Información y orientación para el cuidado de la piel frente al calor y la exposición solar. Acompañamos tu bienestar cutáneo en cada jornada.
+                    </p>
+                    <div class="pt-2">
+                        <span class="text-xs uppercase tracking-[0.2em] text-burdeo-rose block mb-1">Contáctanos</span>
+                        <a href="mailto:Cuidadocompartido@previene.com" class="font-editorial text-2xl sm:text-3xl text-white hover:text-burdeo-rose transition-colors">
+                            Cuidadocompartido@previene.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6">
+                    <form onsubmit="handleContact(event)" class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 space-y-4">
+                        <h3 class="font-editorial text-2xl font-semibold">Envíanos tu consulta</h3>
+                        <p class="text-xs text-white/65 font-light">¿Necesitas orientación sobre productos adecuados para tu equipo de trabajo o rutina personal?</p>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-burdeo-rose">
+                            <input type="email" required placeholder="Tu correo electrónico" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-burdeo-rose">
+                        </div>
+                        <textarea rows="3" required placeholder="Cuéntanos sobre tu entorno de exposición..." class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-burdeo-rose"></textarea>
+                        <button type="submit" class="px-6 py-3 rounded-full bg-burdeo hover:bg-burdeo-light text-white text-sm font-medium transition-colors">
+                            Enviar mensaje
+                        </button>
+                        <p id="contactFeedback" class="hidden text-xs text-burdeo-rose pt-1">¡Gracias por escribirnos! Te responderemos pronto desde Cuidadocompartido@previene.com.</p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+                <p>© Cuidado Compartido — Prevención y salud cutánea frente al calor y el sol.</p>
+                <p>Tu piel tiene memoria · FPS 30 – 50 todos los días</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('skinQuizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const q1 = document.querySelector('input[name="q1"]:checked').value;
+            const q2 = document.querySelector('input[name="q2"]:checked').value;
+            const score = parseInt(document.querySelector('input[name="q3"]:checked').value) +
+                          parseInt(document.querySelector('input[name="q4"]:checked').value) +
+                          parseInt(document.querySelector('input[name="q5"]:checked').value);
+
+            const skinAdvice = {
+                seca: "Tu piel tiende a la sequedad, por lo que necesita un protector solar en crema hidratante con ceramidas o ácido hialurónico que reponga su barrera lipídica.",
+                grasa: "Tu piel produce más sebo; elige un fotoprotector en gel-crema oil-free, de toque seco y resistente al sudor para evitar obstrucción de poros.",
+                mixta: "Al tener piel mixta, te beneficiará una emulsión fluida equilibrante de rápida absorción que controle la zona T sin resecar tus mejillas.",
+                sensible: "Tu piel es reactiva al calor y la radiación; prioriza filtros minerales o hipoalergénicos sin fragancia con activos calmantes como pantenol o niacinamida."
+            };
+
+            const envAdvice = {
+                rutina: "Aunque estés en interiores o días nublados, recuerda que los rayos UV atraviesan ventanas. Aplica FPS 30-50 cada mañana como paso final.",
+                volante: "Al conducir, la radiación UV atraviesa el parabrisas y ventanillas afectando rostro, cuello y brazo izquierdo. Reaplica cada 2 horas y usa gafas con filtro UV.",
+                agricultura: "En agricultura la exposición es extrema: utiliza FPS 50 resistente al sudor cada 2 horas, sombrero de ala ancha, ropa con protección UV e hidratación constante.",
+                cocina: "El calor intenso y la radiación infrarroja de hornos y fogones deshidratan profundamente tu piel. Reaplica protección hidratante cada 2 horas y refuerza tu barrera cutánea al finalizar el turno."
+            };
+
+            let badge = "";
+            let title = "";
+            if (score >= 5) {
+                badge = "Nivel de Protección: Excelente";
+                title = "¡Vas por muy buen camino protegiendo la memoria de tu piel!";
+            } else if (score >= 3) {
+                badge = "Nivel de Protección: Intermedio";
+                title = "Tienes buenos hábitos, pero tu piel necesita mayor constancia";
+            } else {
+                badge = "Nivel de Protección: Prioritario";
+                title = "Es momento de blindar tu piel frente al desgaste silencioso";
+            }
+
+            document.getElementById('resultBadge').textContent = badge;
+            document.getElementById('resultTitle').textContent = title;
+            document.getElementById('resultDescription').textContent = envAdvice[q2];
+            document.getElementById('resultRecommendation').textContent = skinAdvice[q1];
+
+            const resultBox = document.getElementById('quizResult');
+            resultBox.classList.remove('hidden');
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        function resetQuiz() {
+            document.getElementById('skinQuizForm').reset();
+            document.getElementById('quizResult').classList.add('hidden');
+        }
+
+        function handleContact(e) {
+            e.preventDefault();
+            document.getElementById('contactFeedback').classList.remove('hidden');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
